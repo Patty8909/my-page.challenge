@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Convergence', sans-serif;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #343A40;
+    color:#FFFFFF;
+}
+h2 {
+    float: left;
+    padding: 8px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+header .container {
+    display: table;
+}
+
+/*-----------menu styles---------------*/
+#nav-menu {
+    display: none;
+}
+header label {
+    float: right;
+    font-size: 30px;
+    margin: 6px 0px;
+    cursor: pointer;
+}
+.nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #9A9DA0;
+    top: 50px;
+    left: 0;
+    transform: translateX(-100%);
+}
+.nav a {
+    display: block;
+    color: #FFFFFF;
+    height: 50px;
+    text-decoration: none;
+    padding: 20px;
+}
+#nav-menu:checked ~ .nav {
+    transform: translateX(0%);
+}
+@media (min-width:1024px) {
+    .nav {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        background-color:#343A40;
+    }
+    header label {
+        display: none;
+    }
+}
+@media (max-width:360px) {
+    .main-image{
+        background-image: url("../assets/images/tech-main.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+    
+    }
+}
+
+/*-----------section-1 styles---------------*/
+
+.main-image{
+    background-image: url("../assets/images/tech-main.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+}
+
+/*-----------section-2 styles---------------*/
+.section-2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section-2a {
+    max-width: 540px;
+    margin: 20px;
+}
+.section-2b {
+    max-width: 300px;
+    margin: 20px;
+}
+
+/*-----------section-3 styles---------------*/
+.section-3 .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.section-3 article {
+    margin: 15px;
+    max-width: 280px;
+}
+.section-3 img {
+    width: 100%;
+    max-width: 280px;
+}
+/*---------- footer styles---------------*/
+footer .container {
+    background-color: #343A40;
+}
+.footer {
+    text-align: center;
+    height: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
