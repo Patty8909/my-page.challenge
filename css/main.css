@@ -68,31 +68,28 @@ header label {
         display: none;
     }
 }
-@media (max-width:360px) {
-    .main-image{
-        background-image: url("../assets/images/tech-main.jpg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 200px;
-    
-    }
-}
 
 /*-----------section-1 styles---------------*/
-
-.main-image{
-    background-image: url("../assets/images/tech-main.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-
+.main img{
+    width: 100%;
+    height: 200px;
+}
+@media (min-width:900px) {
+    .main img {
+        width: 100%;
+        height: 300px;
+    }
+}
+@media (min-width:1200px) {
+    .main img {
+        width: 100%;
+        height: 400px;
+    }
 }
 
 /*-----------section-2 styles---------------*/
 .section-2 {
-    text-align: center;
+    text-align: justify;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -121,6 +118,16 @@ header label {
     width: 100%;
     max-width: 280px;
 }
+article a {
+    text-decoration: none;
+    border: 2px solid #1461BB;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    background-color: #1461BB;
+}
+
 /*---------- footer styles---------------*/
 footer .container {
     background-color: #343A40;
@@ -130,4 +137,5 @@ footer .container {
     height: 50px;
     color: #FFFFFF;
     font-weight: bold;
+    padding-top: 17px;
 }
