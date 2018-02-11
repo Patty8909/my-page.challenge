@@ -82,8 +82,13 @@ header label {
 }
 @media (min-width:1200px) {
     .main img {
-        width: 100%;
+        width: 60%;
         height: 400px;
+        margin-left: 20%;
+        border: none;
+    }
+    .section-1 {
+        background-color: gray;
     }
 }
 
