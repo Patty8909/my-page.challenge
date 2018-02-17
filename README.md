@@ -4,7 +4,7 @@ Se realizó una página web responsive (para PC y Mobile), sin hacer uso de fram
 
 ## Vista desktop:
 
-![Sin titulo](assets/images/catering-desktop.png)
+![catering-desktop](https://user-images.githubusercontent.com/32307161/36346047-c2c0f7c8-1404-11e8-886c-c0d55bf28fc5.png)
 
 ## Vista mobile:
 
