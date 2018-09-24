@@ -8,8 +8,8 @@ body {
 }
 header {
     width: 100%;
-    height: 50px;
-    background-color: #00FFFF;
+    height: 80px;
+    background-color: rgb(243, 214, 119);
     color:black;
 }
 .font-logo {
@@ -17,7 +17,7 @@ header {
 }
 h2 {
     float: left;
-    padding: 8px;
+    padding: 20px 0px 8px 15px;
 }
 .lineH {
     line-height: 1.4;
@@ -33,7 +33,7 @@ header .container {
     display: table;
 }
 .btn {
-    background-color: #00FFFF;
+    background-color: rgb(243, 214, 119);
 }
 
 /*-----------menu styles---------------*/
@@ -49,11 +49,12 @@ header label {
 .nav {
     position: absolute;
     width: 100%;
-    height: 100vh;
-    background: #00FFFF;
+    height: 100vh - 80px;
+    background: rgb(243, 214, 119);
     top: 50px;
     left: 0;
     transform: translateX(-100%);
+    padding-top: 13px;
 }
 .nav a {
     display: block;
@@ -65,6 +66,9 @@ header label {
 #nav-menu:checked ~ .nav {
     transform: translateX(0%);
 }
+.nav a:hover {
+    background-color: rgb(216, 212, 212);
+}
 @media (min-width:1024px) {
     .nav {
         position: static;
@@ -73,8 +77,9 @@ header label {
         transform: translateX(0%);
         float: right;
         display: flex;
-        background-color:#00FFFF;
+        background-color:rgb(243, 214, 119);
     }
+    
     header label {
         display: none;
     }
@@ -88,13 +93,14 @@ header label {
 @media (min-width:900px) {
     .main img {
         width: 100%;
-        height: 300px;
+        height: 100vh;
     }
+    
 }
 @media (min-width:1200px) {
     .main img {
         width: 100%;
-        height: 400px;
+        height: 92vh;
        /* margin-left: 20%;*/
         border: none;
     }
@@ -133,12 +139,12 @@ header label {
 }
 article a {
     text-decoration: none;
-    border: 2px solid #00FFFF;
+    border: 2px solid rgb(243, 214, 119);
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
     color: black;
-    background-color: #00FFFF;
+    background-color: rgb(243, 214, 119);
 }
 
 /*---------- footer styles---------------*/
